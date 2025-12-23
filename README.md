@@ -78,16 +78,16 @@ $$
 $$
 
 #### Medial axes of curves and surfaces
-<div class="row" style="
+<div class="row" align="center" style="
     display: flex;
     align-items: center;
 ">
-    <div class="one-half column category" style="text-align: center;">
-        <img class="u-max-full-width" src="_readme-sources/documentation/medial_axis_2d.png">
+    <div style="text-align: center; width: 48%">
+        <img style="max-width: 100%; box-sizing: border-box" src="_readme-sources/documentation/medial_axis_2d.png">
             <p>Fig. 4: Medial axis of a polygon. Original source: [9, fig. 6]. Modified.</p>
     </div>
-    <div class="one-half column category" style="text-align: center;">
-        <img class="u-max-full-width" src="_readme-sources/documentation/medial_axis_3d.jpg">
+    <div style="text-align: center; width: 48%">
+        <img style="max-width: 100%; box-sizing: border-box" src="_readme-sources/documentation/medial_axis_3d.jpg">
             <p>Fig. 5: Medial surface of a surface. Original source: [10]</p>
     </div>
 </div>
@@ -162,7 +162,7 @@ of finding that point would be more involved and usually not yield the whole med
 
 #### Volumetric energy
 <div class="u-pull-right" style="text-align: center; width:300px; margin-left:20px">
-  <img class="u-max-full-width" src="_readme-sources/documentation/volumetric_energy.png">
+  <img style="max-width: 100%; box-sizing: border-box" src="_readme-sources/documentation/volumetric_energy.png">
   <p>
   
   Fig. 7: Points and distances to calculate $\tilde b$</p>
