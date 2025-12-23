@@ -53,8 +53,8 @@ What follows are the basic concepts needed to develop our approach for volume-fi
 We start by defining the Frenet-Serret frame and then transition to medial axes and surfaces.
 
 #### Frenet-Serret frame
-<div align="center">
-<img style="width: 50%" src="_readme-sources/documentation/frenet_frame.png">
+<div align="left" style="width: 50%">
+<img src="_readme-sources/documentation/frenet_frame.png">
     <p>Fig. 3: Visualization of the Frenet-Serret frame. Tangents are red, normals are blue and bitangents are yellow.</p>
 </div>
 
