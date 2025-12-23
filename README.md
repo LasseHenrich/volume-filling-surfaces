@@ -63,19 +63,18 @@ we first introduce a consistent frame on the curve, namely the _Frenet-Serret_ f
 on the curve $\gamma$, the Frenet-Serret frame consists of three mutually orthogonal vectors
 that form an orthonormal basis.<br>
 The unit <i>tangent vector</i>
-
 $$
     T(s)=\frac{\gamma'(s)}{\lvert\gamma'(s)\rvert}
 $$
+
 simply points in the direction of the curve's tangent at $s$. For consistency,
 the unit <i>normal vector</i>
-
 $$
     N(s)=\frac{T'(s)}{\lvert T'(s)\rvert}
 $$
+
 is defined based on the curve's curvature at that point and always points <i>inward</i>.
 Lastly, the unit <i>binormal vector</i> is just
-
 $$
     B(s)=T(s)\times N(s).
 $$
@@ -181,6 +180,7 @@ overshot distance
 $$
     \tilde b\approx\frac{b\lVert u\rVert\lVert d_x\rVert}{\langle u, d_x\rangle}.
 $$
+
 Implied by the local linearity, $b\in\mathbb R$ and $u\in\mathbb R^3$ can be defined as $b=d_c-r$ and $u=\lvert x-c\rvert$, respectively.
 Note that the distance to the surface can be evaluated in constant time with the approach described in a later section.<br>
 Going forward, we use $E_{c,\tilde M}$ to describe this adapted medial surface energy.
@@ -194,6 +194,7 @@ which simply measures the total length of the curve, leading to the overall ener
 $$
     E_c(\gamma)=E_{c,L}(\gamma)+\alpha E_{c,\tilde M}(\gamma).
 $$
+
 Here, $\alpha\in\mathbb R$ is a coefficient that balances the medial surface energy with the length energy.
 It needs to be set based on the desired filling radius $r$.
         
@@ -213,6 +214,7 @@ As no other energy is needed, the total energy to minimize for volume-filling su
 $$
     E_s(\delta)=E_{s,L}(\delta)+\beta E_{s,\tilde M}(\delta).
 $$
+
 Note that the balancing coefficient $\beta\in\mathbb R$ again depends on $r$ and may have a
 diffent relation to it than $\alpha$.
 
@@ -287,6 +289,7 @@ we find
 $$
     r\approx\frac{2.25}{\beta}
 $$
+
 to be a good relation. Fig. 9 pictures multiple tests of different scenarios
 with $\beta$ being evaluated from this.
 
