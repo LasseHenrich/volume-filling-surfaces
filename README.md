@@ -1,7 +1,15 @@
 # Volume-Filling Surfaces (and Curves)
-Volume-Filling Curve           |  Volume-Filling Surface
-:-:|:-:
-![alt text](_readme-sources/volume_filling_curve.gif) | ![alt text](_readme-sources/volume_filling_surface.gif)
+
+<p align="center">
+  <img src="_readme-sources/volume_filling_curve.gif" width="35%" />
+    &nbsp; &nbsp;
+  <img src="_readme-sources/volume_filling_surface.gif" width="35%" /> 
+</p>
+<p align="center">
+  <em>Fig. 1: Filling a volume with a curve</em>
+  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+  <em>Fig. 2: Filling a volume with a surface</em>
+</p>
 
 We present a novel algorithm to generate closed surfaces that fill a given volume with a given radius. Our algorithm starts with some arbitrary surface and then minimizes an energy that is based on an implicit medial surface representation via standard gradient descent. As an intermediary step, we also developed an approximation for volume-filling curves. Our results, especially for the case of surfaces, prove effective in constructing volume-filling manifolds that look asthetically pleasing. While we do not conduct a thorough comparison to the current state of the art, we have reason to believe that our algorithm can generate comparable results in far less time.
 
@@ -83,12 +91,16 @@ $$
 $$
 
 #### Medial axes of curves and surfaces
-<div align="center">
-  <img style="width: 50%" src="_readme-sources/documentation/medial_axis_2d.png">
-      <p>Fig. 4: Medial axis of a polygon. Original source: [9, fig. 6]. Modified.</p>
-  <img style="width: 50%" src="_readme-sources/documentation/medial_axis_3d.jpg">
-      <p>Fig. 5: Medial surface of a surface. Original source: [10]</p>
-</div>
+<p align="center">
+  <img src="_readme-sources/documentation/medial_axis_2d.png" width="35%" />
+    &nbsp; &nbsp;
+  <img src="_readme-sources/documentation/medial_axis_3d.jpg" width="35%" /> 
+</p>
+<p align="center">
+  <em>Fig. 4: Medial axis of a polygon. Original source: [9, fig. 6]. Modified.</em>
+  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+  <em>Fig. 5: Medial surface of a surface. Original source: [10]</em>
+</p>
 
 The <i>medial axis</i> of any bounded region $G$ is the set of all points
 that have more than one closest point on the boundary of the region. The medial axis can therefore
