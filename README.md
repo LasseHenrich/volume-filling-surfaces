@@ -117,11 +117,7 @@ spanned by $N(b)$ and $B(b)$. As we only approximate volume-filling curves as an
 introduce a simple approximation in a later section.
 
 ### Method
-<div style="
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-">
+<div align="center">
     <img style="width: 100%" src="_readme-sources/documentation/flow/flow.png">
         <p>Fig. 6: Main steps for generating volume-filling surfaces.</p>
 </div>
@@ -154,8 +150,8 @@ if we were to find the closest point on the medial surface given a point on $\ga
 of finding that point would be more involved and usually not yield the whole medial surface for infinitely small steps.
 
 #### Volumetric energy
-<div class="u-pull-right" style="text-align: center; width:300px; margin-left:20px">
-  <img style="max-width: 100%; box-sizing: border-box" src="_readme-sources/documentation/volumetric_energy.png">
+<div align="left">
+  <img width="50%" src="_readme-sources/documentation/volumetric_energy.png">
   <p>
   
   Fig. 7: Points and distances to calculate $\tilde b$</p>
