@@ -150,7 +150,7 @@ if we were to find the closest point on the medial surface given a point on $\ga
 of finding that point would be more involved and usually not yield the whole medial surface for infinitely small steps.
 
 #### Volumetric energy
-<div align="left">
+<div align="center">
   <img width="50%" src="_readme-sources/documentation/volumetric_energy.png">
   <p>
   
@@ -245,11 +245,7 @@ we build a closest-point query data structure upfront, once for each iteration o
 Both Noma et al. and us use a k-d tree for this, specifically the library <i>knn-cpp</i> [12].
 
 #### Computing distances to the volume's boundary
-<div style="
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-">
+<div align="center">
   <img style="width: 50%" src="_readme-sources/documentation/sdf.png">
       <p>Fig. 8: Visualization of a signed distance function generated for a volume's boundary.</p>
 </div>
@@ -265,11 +261,7 @@ Here, we chose OpenVDB [13] as a library to do that, which can evaluate millions
 within seconds, even for complex meshes on an ordinary computer.
 
 #### Evaluating $\alpha$ and $\beta$
-<div style="
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-">
+<div align="center">
   <img style="width: 100%" src="_readme-sources/documentation/beta.png">
   <p>
   
@@ -299,20 +291,12 @@ with $\beta$ being evaluated from this.
 Results of applying our geometric flow to a variety of volumes and filling-radii $r$ are shown below as well
 in fig. 1 and fig. 2.
 
-<div style="
-display: flex;
-flex-direction: column;
-align-items: center;
-">
+<div align="center">
   <img style="width: 100%" src="_readme-sources/documentation/results_curve.png">
   <p>Fig. 10: Volume-filling curves</p>
 </div>
 
-<div style="
-display: flex;
-flex-direction: column;
-align-items: center;
-">
+<div align="center">
     <img style="width: 100%" src="_readme-sources/documentation/results_surface.png">
     <p>Fig. 11: Volume-filling surfaces</p>
 </div>
