@@ -1,18 +1,7 @@
 # Volume-Filling Surfaces (and Curves)
-<div class="one-half column category" style="text-align: center;">
-    <video class="u-max-full-width" style="padding-left: 10rem; padding-right: 10rem" autoplay loop muted>
-      <source src="_readme-sources/volume_filling_curve.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-    </video>
-  <p>Fig. 1: Filling a volume with a curve</p>
-</div>
-  <div class="one-half column category" style="text-align: center;">
-    <video class="u-max-full-width" style="padding-left: 10rem; padding-right: 10rem" autoplay loop muted>
-    <source src="_readme-sources/volume_filling_surface.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-    </video>
-  <p>Fig. 2: Filling a volume with a surface</p>
-</div>
+Volume-Filling Curve           |  Volume-Filling Surface
+:-:|:-:
+![alt text](_readme-sources/volume_filling_curve.gif) | ![alt text](_readme-sources/volume_filling_surface.gif)
 
 We present a novel algorithm to generate closed surfaces that fill a given volume with a given radius. Our algorithm starts with some arbitrary surface and then minimizes an energy that is based on an implicit medial surface representation via standard gradient descent. As an intermediary step, we also developed an approximation for volume-filling curves. Our results, especially for the case of surfaces, prove effective in constructing volume-filling manifolds that look asthetically pleasing. While we do not conduct a thorough comparison to the current state of the art, we have reason to believe that our algorithm can generate comparable results in far less time.
 
@@ -66,6 +55,24 @@ We start by defining the Frenet-Serret frame and then transition to medial axes 
 <img style="width: 50%" src="_readme-sources/documentation/frenet_frame.png">
     <p>Fig. 3: Visualization of the Frenet-Serret frame. Tangents are red, normals are blue and bitangents are yellow.</p>
 </div>
+In order to define the medial axes of curves and surfaces and calculate points on it,
+we first introduce a consistent frame on the curve, namely the <i>Frenet-Serret</i> frame (ref. [8]). At any point $\gamma(s)\in\mathbb R^3$
+on the curve $\gamma$, the Frenet-Serret frame consists of three mutually orthogonal vectors
+that form an orthonormal basis.<br>
+The unit <i>tangent vector</i>
+$$
+    T(s)=\frac{\gamma'(s)}{\lvert\gamma'(s)\rvert}
+$$
+simply points in the direction of the curve's tangent at $s$. For consistency,
+the unit <i>normal vector</i>
+$$
+    N(s)=\frac{T'(s)}{\lvert T'(s)\rvert}
+$$
+is defined based on the curve's curvature at that point and always points <i>inward</i>.
+Lastly, the unit <i>binormal vector</i> is just
+$$
+    B(s)=T(s)\times N(s).
+$$
 
 #### Medial axes of curves and surfaces
 #### Calculating distances from the medial surface
