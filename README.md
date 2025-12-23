@@ -78,18 +78,11 @@ $$
 $$
 
 #### Medial axes of curves and surfaces
-<div class="row" align="center" style="
-    display: flex;
-    align-items: center;
-">
-    <div style="text-align: center; width: 48%">
-        <img style="max-width: 100%; box-sizing: border-box" src="_readme-sources/documentation/medial_axis_2d.png">
-            <p>Fig. 4: Medial axis of a polygon. Original source: [9, fig. 6]. Modified.</p>
-    </div>
-    <div style="text-align: center; width: 48%">
-        <img style="max-width: 100%; box-sizing: border-box" src="_readme-sources/documentation/medial_axis_3d.jpg">
-            <p>Fig. 5: Medial surface of a surface. Original source: [10]</p>
-    </div>
+<div align="center">
+  <img style="width: 50%" src="_readme-sources/documentation/medial_axis_2d.png">
+      <p>Fig. 4: Medial axis of a polygon. Original source: [9, fig. 6]. Modified.</p>
+  <img style="width: 50%" src="_readme-sources/documentation/medial_axis_3d.jpg">
+      <p>Fig. 5: Medial surface of a surface. Original source: [10]</p>
 </div>
 
 The <i>medial axis</i> of any bounded region $G$ is the set of all points
