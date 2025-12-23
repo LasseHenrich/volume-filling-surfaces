@@ -240,14 +240,14 @@ our focus lies on volume-filling <i>surfaces</i> and not curves, we need to keep
 As a very simple approximation, we therefore settle on just evaluating $n=2,4,8,16,\dots$ directions on the plane, where
 all neighboring directions are spaced by an angle of $\alpha=360°/n$. We found that fair results can already be achieved for $n=2$
 when using $B(s)$ and $-B(s)$ as the two directions. However, the flow never stabilizes; the curve keeps moving and adjusting without end.
-For $n=4$ (i.e. $B(s),-B(s),N(s),-N(s)$), the curve moves less in the final stage, and higher $n$ increase the stability even more.
+For $n=4$ (i.e. $B(s),-B(s),N(s),-N(s)$ ), the curve moves less in the final stage, and higher $n$ increase the stability even more.
 However, since the evaluating the distsance to the medial surface is the primary bottleneck of the flow,
 evaluating more directions significantly impacts performance. As a compromise, we used $n=4$
 for all generated graphics in this paper.
 
 #### Computing distances to the medial surface
 For using directions to calculate points on the medial surface, we can apply the approach of Noma et al.: 
-Given a point $\delta(s)$ on a surface $\delta$ and a direction (e.g. $N(s)$), a binary search is applied to find
+Given a point $\delta(s)$ on a surface $\delta$ and a direction (e.g. $N(s)$ ), a binary search is applied to find
 the center $c$ of a sphere that is tangential to $\delta(s)$ and lays within some tolerance of another
 surface-point $\delta(t)$. In essence, if the sphere does not contain any other point (within some tolerace),
 it is shifted along the given direction and grown accordingly, and vice versa.<br>
