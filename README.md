@@ -7,7 +7,7 @@
 </p>
 <p align="center">
   <em>Fig. 1: Filling a volume with a curve</em>
-  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
   <em>Fig. 2: Filling a volume with a surface</em>
 </p>
 
@@ -97,8 +97,8 @@ $$
   <img src="_readme-sources/documentation/medial_axis_3d.jpg" width="35%" /> 
 </p>
 <p align="center">
-  <em>Fig. 4: Medial axis of a polygon. Original source: [9, fig. 6]. Modified.</em>
-  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+  <em width="35%">Fig. 4: Medial axis of a polygon. Taken from [9, fig. 6], modified.</em>
+  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
   <em>Fig. 5: Medial surface of a surface. Original source: [10]</em>
 </p>
 
