@@ -14,7 +14,7 @@
 We present a novel algorithm to generate closed surfaces that fill a given volume with a given radius. Our algorithm starts with some arbitrary surface and then minimizes an energy that is based on an implicit medial surface representation via standard gradient descent. As an intermediary step, we also developed an approximation for volume-filling curves. Our results, especially for the case of surfaces, prove effective in constructing volume-filling manifolds that look asthetically pleasing. While we do not conduct a thorough comparison to the current state of the art, we have reason to believe that our algorithm can generate comparable results in far less time.
 
 A publication on _Volume-Filling Surfaces_ will follow.<br>
-Note that our _Volume-Filling Curves_ are fairly well described in [this recently published paper](https://www.dgp.toronto.edu/projects/medial-sphere-preconditioning/), though their approach is seems polished. (Our project existed before this paper came out.)
+Note that our _Volume-Filling Curves_ are fairly well described in [this recently published paper](https://www.dgp.toronto.edu/projects/medial-sphere-preconditioning/), though their approach seems more polished. (Our project existed before that paper came out.)
 
 ## Contents
 1. [Project overview and technical background](#project-overview-and-technical-background)
