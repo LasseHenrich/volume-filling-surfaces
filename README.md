@@ -63,16 +63,19 @@ we first introduce a consistent frame on the curve, namely the _Frenet-Serret_ f
 on the curve $\gamma$, the Frenet-Serret frame consists of three mutually orthogonal vectors
 that form an orthonormal basis.<br>
 The unit <i>tangent vector</i>
+
 $$
     T(s)=\frac{\gamma'(s)}{\lvert\gamma'(s)\rvert}
 $$
 simply points in the direction of the curve's tangent at $s$. For consistency,
 the unit <i>normal vector</i>
+
 $$
     N(s)=\frac{T'(s)}{\lvert T'(s)\rvert}
 $$
 is defined based on the curve's curvature at that point and always points <i>inward</i>.
 Lastly, the unit <i>binormal vector</i> is just
+
 $$
     B(s)=T(s)\times N(s).
 $$
