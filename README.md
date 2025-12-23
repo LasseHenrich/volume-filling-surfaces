@@ -63,18 +63,21 @@ we first introduce a consistent frame on the curve, namely the _Frenet-Serret_ f
 on the curve $\gamma$, the Frenet-Serret frame consists of three mutually orthogonal vectors
 that form an orthonormal basis.<br>
 The unit <i>tangent vector</i>
+
 $$
     T(s)=\frac{\gamma'(s)}{\lvert\gamma'(s)\rvert}
 $$
 
 simply points in the direction of the curve's tangent at $s$. For consistency,
 the unit <i>normal vector</i>
+
 $$
     N(s)=\frac{T'(s)}{\lvert T'(s)\rvert}
 $$
 
 is defined based on the curve's curvature at that point and always points <i>inward</i>.
 Lastly, the unit <i>binormal vector</i> is just
+
 $$
     B(s)=T(s)\times N(s).
 $$
@@ -177,6 +180,7 @@ For small time steps and volumes that are not too detailed in relation to $r$, w
 This enables fast computation: Given a curve-point $x$, the originally evaluated sphere-center $c$ and
 their respective distance-vectors from the surface $d_x, d_c\in\mathbb R^3$, it is elementary to evaluate the
 overshot distance
+
 $$
     \tilde b\approx\frac{b\lVert u\rVert\lVert d_x\rVert}{\langle u, d_x\rangle}.
 $$
@@ -191,6 +195,7 @@ to minimize the distances to the medial surface as much as possible, resulting i
 even in bounded regions. As Noma et al. point out, we are instead just interested in the <i>shortest</i>
 curve that satisfies the volume-filling constraint. We therefore add the term $E_{c,L}(\gamma)$ to our energy function
 which simply measures the total length of the curve, leading to the overall energy
+
 $$
     E_c(\gamma)=E_{c,L}(\gamma)+\alpha E_{c,\tilde M}(\gamma).
 $$
@@ -211,6 +216,7 @@ of these centers to an imaginary boundary that is $r$ away from the real boundar
 While we previously imposed a penalty on the curves length, we now impose one on the surface's area:
 Again, we are interested in the <i>smallest</i> surface that fulfills the volume-filling condition.<br>
 As no other energy is needed, the total energy to minimize for volume-filling surfaces is
+
 $$
     E_s(\delta)=E_{s,L}(\delta)+\beta E_{s,\tilde M}(\delta).
 $$
@@ -286,6 +292,7 @@ based on the number of evaluated directions, which heavily influence the radius 
 For volume-filling surfaces, however, the energy calculation is much simpler and does not need to
 rely on approximations. We can therefore proceed to determine a suitable $\beta$. Experimentally,
 we find
+
 $$
     r\approx\frac{2.25}{\beta}
 $$
